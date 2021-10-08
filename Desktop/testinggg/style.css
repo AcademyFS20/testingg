@@ -1,0 +1,49 @@
+body{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: yellow;
+    width:100%;
+}
+
+.content {
+
+    width:80%;
+    background-color: red;
+    transform: translate(10%);
+   
+}
+
+.sect1 {
+
+    border:1px solid black;
+}
+
+.sect2{
+
+    border:1px solid black;
+}
+
+.sect1 h1{
+
+    text-align: center;
+}
+
+.article{
+
+    display:flex;
+}
+
+.btn{
+
+    position:relative;
+    height:50px;
+    margin:15px;
+}
+
+button{
+
+    position: absolute;
+    right:0;
+}
