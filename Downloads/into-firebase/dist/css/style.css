@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital@0;1&family=Antic+Slab&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #F7F6F2;
+  scroll-behavior: smooth; }
+
+#main {
+  width: 100%;
+  height: auto; }
+
+.nav {
+  width: 100%; }
+  .nav__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #D89216;
+    padding: 3rem;
+    box-shadow: 0 5px 15px #d89216; }
+  .nav__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+    font-size: 2.4rem;
+    list-style-type: none;
+    width: 100%; }
+  .nav__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Antic Slab", serif;
+    cursor: pointer;
+    font-weight: 600; }
+    .nav__item a {
+      text-decoration: none;
+      padding: 1rem;
+      color: #4C4C4C;
+      transition: all 0.4s linear; }
+      .nav__item a:hover {
+        color: #F7F6F2; }
+    .nav__item i {
+      text-align: center;
+      color: rgba(0, 0, 0, 0.8);
+      transition: all 0.4s linear; }
+      .nav__item i:hover {
+        color: #F7F6F2; }
+  .nav__logo {
+    width: 100%; }
+  .nav__img {
+    width: 40px;
+    height: 40px; }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2.6rem auto; }
+  .header input[type=text] {
+    font-size: 2rem;
+    padding: 0 1rem;
+    color: rgba(0, 0, 0, 0.8); }
+  .header__title {
+    font-family: "Antic Slab", serif;
+    font-size: 4.2rem; }
+  .header__underline {
+    width: 10%;
+    height: 4px;
+    margin: 1rem 0;
+    background-color: #D89216; }
+  .header__search {
+    margin: 2rem auto; }
+    .header__search input {
+      width: 600px;
+      height: 40px;
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 5px 15px rgba(216, 146, 22, 0.6); }
+      .header__search input:focus {
+        background-color: #D89216;
+        color: #194350; }
+        .header__search input:focus::placeholder {
+          font-size: 1.6rem;
+          color: white; }
+      .header__search input::placeholder {
+        padding: 2rem;
+        font-size: 1.6rem;
+        color: #D89216; }
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .section__container {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: 2rem;
+    position: relative;
+    margin: 2.6rem auto; }
+  .section__content {
+    font-size: 2.4rem; }
+  .section__title {
+    font-family: "Antic Slab", serif;
+    text-shadow: 1px 1px 1px #000, 3px 3px 5px #D89216; }
+  .section__description {
+    font-family: "Antic Slab", serif;
+    text-align: justify;
+    padding: 0.875rem; }
+  .section__date {
+    font-size: 1.4rem;
+    color: rgba(228, 109, 109, 0.9); }
+  .section__icon {
+    position: absolute;
+    top: -1.4rem;
+    left: 0;
+    font-size: 2.5rem;
+    color: #D89216;
+    z-index: 100; }
+
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 1rem auto;
+  font-size: 2.4rem;
+  box-shadow: 0 5px 15px rgba(216, 146, 22, 0.6); }
+  .table__articles {
+    font-family: "Antic Slab", serif;
+    width: 100%;
+    border-collapse: collapse; }
+    .table__articles th, .table__articles td {
+      color: #4C4C4C;
+      padding: 2rem;
+      text-align: left;
+      border-top: 1px solid rgba(228, 109, 109, 0.9);
+      border-bottom: 1px solid rgba(228, 109, 109, 0.9); }
+    .table__articles td {
+      font-size: 1.8rem; }
+    .table__articles th {
+      background: #D89216;
+      font-style: italic;
+      font-weight: 600; }
+  .table__button {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center; }
+  .table__icon {
+    padding: 1rem;
+    color: #27be34;
+    transition: all 0.4s linear; }
+    .table__icon:hover {
+      color: #0cdf0c; }
+    .table__icon--trash {
+      color: rgba(228, 109, 109, 0.9); }
+      .table__icon--trash:hover {
+        color: red; }
+  .table__btn {
+    margin: 1rem auto;
+    padding: 1rem;
+    font-family: "Antic Slab", serif; }
+    .table__btn--add {
+      border-radius: 30px;
+      padding: 1.2rem;
+      background: transparent;
+      border: 1px solid rgba(0, 0, 0, 0.6);
+      font-size: 1.6rem;
+      cursor: pointer;
+      background-color: #D89216;
+      color: #F7F6F2;
+      transition: all 0.4s linear; }
+      .table__btn--add:hover {
+        background-color: #6be675; }
+    .table__btn--modal {
+      border-radius: 30px;
+      padding: 1.2rem;
+      background: transparent;
+      border: 1px solid rgba(0, 0, 0, 0.6);
+      font-size: 1.6rem;
+      color: #194350;
+      transition: all 0.4s linear;
+      cursor: pointer; }
+      .table__btn--modal:hover {
+        background-color: #D89216;
+        color: #F7F6F2; }
+
+.modal-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: "Antic Slab", serif;
+  display: none;
+  animation-name: enter;
+  animation-duration: 0.9s; }
+
+.modal-show {
+  display: block; }
+
+.modal {
+  background-color: #F7F6F2;
+  text-align: center;
+  width: 60%;
+  margin: 20rem auto;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(216, 146, 22, 0.6); }
+  .modal__header {
+    background-color: #D89216;
+    border-radius: 30px;
+    font-size: 1.6rem;
+    height: auto;
+    padding: 1rem; }
+  .modal__form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem; }
+    .modal__form input {
+      margin: 3rem 0;
+      width: 50%;
+      font-size: 1.6rem;
+      outline: none;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      transition: all 0.3s ease-in-out; }
+      .modal__form input::placeholder {
+        color: #D89216; }
+      .modal__form input:focus {
+        border: 2px solid #D89216; }
+    .modal__form textarea {
+      width: 50%;
+      font-size: 1.6rem;
+      padding: 1rem;
+      outline: none;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease-in-out; }
+      .modal__form textarea::placeholder {
+        color: #D89216; }
+      .modal__form textarea:focus {
+        border: 2px solid #D89216; }
+
+@keyframes enter {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }

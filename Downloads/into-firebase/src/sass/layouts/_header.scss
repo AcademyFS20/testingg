@@ -1,0 +1,75 @@
+.nav{
+
+    width:100%;
+
+    &__navigation{
+
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $UIcolor;
+        padding:3rem;
+        box-shadow: $dark-shadow;
+    }
+
+    &__items{
+
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width:40%;
+        font-size: 2.4rem;
+        list-style-type: none;
+        width: 100%;
+    
+    }
+
+    &__item{
+
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: $titleFont;
+        cursor: pointer;
+        font-weight: 600;
+        a{
+            text-decoration: none;
+            padding:1rem;
+            color:$titleColor;
+            transition: $transition;
+
+            &:hover{
+
+                color:$bgColor;
+            }
+        }
+
+        i{
+
+            text-align: center;
+            color:$black;
+            transition: $transition;
+
+            &:hover{
+
+                color:$bgColor;
+            }
+        }
+    }
+
+
+    &__logo{
+
+        width:100%;
+ 
+    }
+
+    &__img{
+
+        width:40px;
+        height:40px;
+    
+    }
+}

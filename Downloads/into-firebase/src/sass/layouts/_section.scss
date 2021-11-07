@@ -1,0 +1,65 @@
+.header{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin:2.6rem auto;
+
+
+    input[type=text] {
+      
+        font-size: 2rem;
+        padding:0 1rem;
+        color:$black;
+    }
+
+    &__title{
+
+        font-family: $textFont ;
+        font-size: 4.2rem;
+    }
+
+    &__underline{
+
+        width:10%;
+        height:4px;
+        margin:1rem 0;
+        background-color:$UIcolor;
+  
+    }
+
+    &__search{
+
+        margin:2rem auto;
+
+       input{
+
+        width:600px;
+        height:40px;
+        border:none;
+        border-radius:1rem;
+        box-shadow:$light-shadow;
+
+      
+
+        &:focus{
+            background-color: $UIcolor;
+            color:$textColor;
+
+            &::placeholder
+            {
+                font-size: 1.6rem;
+                color:white;
+            }
+        }
+        &::placeholder{
+
+            padding: 2rem;
+            font-size: 1.6rem;
+            color:$UIcolor;
+        }
+       }
+    }
+}

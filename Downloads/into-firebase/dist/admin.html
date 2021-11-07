@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.compressed.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Admin panel</title>
+</head>
+<body>
+
+    <main id="main">
+        <header class="nav">
+            <nav class="nav__navigation">
+                <div class="nav__logo">
+                    <img src="../src/images/lgo.png" class="nav__img">
+                </div>
+                <ul class="nav__items">
+                    <li class="nav__item">
+                        <i class="fas fa-home"></i><a href="index.html">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <i class="fas fa-user-shield"></i> <a href="admin.html">Admin</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="header">
+
+            <h2 class="header__title">List of Articles</h2>
+            <div class="header__underline"></div>
+            </section>
+
+
+
+            <section class="table">
+                <table class="table__articles">
+                    <tr>
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th>Content</th>
+                        <th>Date</th>
+                        <th>Icon</th>
+                        <th>Actions</th>
+                    </tr>
+                </table>
+
+                <div class="table__btn">
+                  <button class="table__btn--add">Add item</button>
+                </div>
+            </section>
+
+
+            <section class="add-modal modal-wrapper">
+
+               <div class="modal">
+                   <div class="modal__header">
+                       <h3>Add new article</h3>
+                   </div>
+
+                   <div class="modal__body">
+                       <form class="modal__form" autocomplete="off">
+                           <input type="text" name="title" id="title" placeholder="article title">
+                           <textarea  name="content" id="content" rows="6" placeholder="content"></textarea>
+                           <input type="date" name="date" id="date" />
+                           <input type="text" name="icon" id="icon" placeholder="icon" />
+                           <div class="table__btn">
+                            <button type="submit" class="table__btn--modal">Add item</button>
+                          </div>
+                       
+                        </form>
+                   </div>
+               </div>
+            </section>
+
+
+            <section class="edit-modal modal-wrapper">
+
+                <div class="modal">
+                    <div class="modal__header">
+                        <h3>Edit Article</h3>
+                    </div>
+ 
+                    <div class="modal__body">
+                        <form class="modal__form" id="edit" autocomplete="off">
+                            <input type="text" name="title" id="title" placeholder="article title">
+                            <textarea  name="content" id="content" rows="6" placeholder="content"></textarea>
+                            <input type="date" name="date" id="date" />
+                            <input type="text" name="icon" id="icon" placeholder="icon" />
+                            <div class="table__btn">
+                             <button type="submit" class="table__btn--modal">Edit item</button>
+                           </div>
+                        
+                         </form>
+                    </div>
+                </div>
+             </section>
+    </main>
+
+
+
+    <script type="module" src="../src/js/admin.js"></script> 
+</body>
+</html>
+
+    

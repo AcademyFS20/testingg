@@ -1,0 +1,37 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "live-server --port=8181 --browser=chrome",
+    "dev": "node-sass src/sass/main.scss dist/css/style.css",
+    "see": "npm-run-all dev server",
+    "compile": "node-sass src/sass/main.scss dist/css/style.comp.css",
+    "watch": "node-sass src/sass/main.scss dist/css/style.css --watch",
+    "compress": "node-sass dist/css/style.prefix.css dist/css/style.compressed.css  --output-style compressed",
+    "prefix": "postcss dist/css/style.comp.css --use autoprefixer -o dist/css/style.prefix.css",
+    "build": "npm-run-all compile prefix compress uglify",
+    "uglify": "uglifyjs -o dist/js/app.min.js src/js/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.3.7",
+    "font-awesome": "^4.7.0",
+    "gh-pages": "^3.2.3",
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.3.9",
+    "sass": "^1.42.1",
+    "uglify-js": "^3.14.2"
+  },
+  "devDependencies": {
+    "concat": "^1.0.3",
+    "npm-run-all": "^4.1.5"
+  },
+  "browserslist": [
+    "defaults",
+    "last 3 versions"
+  ]
+}

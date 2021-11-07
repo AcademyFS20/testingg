@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+
+    font-size: $baseFontSize;
+}
+
+
+body{
+
+    background-color: $bgColor;
+    scroll-behavior: smooth;
+}
+
+#main{
+
+    width:100%;
+    height:auto;
+}

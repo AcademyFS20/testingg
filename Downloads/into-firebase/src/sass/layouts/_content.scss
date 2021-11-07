@@ -1,0 +1,53 @@
+.section{
+
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+    &__container{
+
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        padding: 2rem;
+        position: relative;
+        margin : 2.6rem auto;
+    }
+
+    &__content{
+
+        font-size:2.4rem;
+    
+    }
+
+    &__title{
+
+        font-family: $titleFont;
+        text-shadow: 1px 1px 1px #000, 
+        3px 3px 5px $UIcolor; 
+    }
+
+    &__description{
+        font-family: $textFont ;
+        text-align: justify;
+        padding: 0.875rem;
+    }
+
+    &__date{
+
+        font-size: 1.4rem;
+        color:$clr-red-dark;
+    }
+
+    &__icon {
+
+        position :absolute;
+        top: -1.4rem;
+        left:0;
+        font-size: 2.5rem;
+        color:$UIcolor;
+        z-index: 100;
+        
+    }
+}

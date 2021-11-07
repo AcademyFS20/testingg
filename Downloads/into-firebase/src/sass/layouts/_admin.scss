@@ -1,0 +1,124 @@
+.table{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin:1rem auto;
+    font-size: 2.4rem;
+    
+    box-shadow: $light-shadow;
+
+    &__articles{
+
+        font-family: $textFont;
+        width:100%;
+        border-collapse: collapse;
+        
+        th, td{
+
+            color:$titleColor;
+            padding: 2rem;
+            text-align: left;
+            border-top: 1px solid $clr-red-dark;
+            border-bottom: 1px solid $clr-red-dark;
+        }
+
+        td{
+
+            font-size:1.8rem;
+        }
+
+        th{
+
+            background:$UIcolor;
+            font-style: italic;
+            font-weight:600;
+
+        }
+
+        
+    }
+
+   
+
+
+    &__button{
+
+         background:transparent;
+         border: none;
+         font-size:2rem;
+         cursor: pointer;
+         text-align:center;
+
+
+    }
+
+
+    &__icon{
+
+        padding:1rem;
+        color:$clr-green-dark;
+        transition:$transition;
+
+        &:hover{
+            color:rgb(12, 223, 12);
+        }
+
+        &--trash{
+
+            color:$clr-red-dark;
+
+            &:hover{
+
+                color:red;
+            }
+            
+        }
+    }
+
+
+    &__btn{
+
+        margin:1rem auto;
+        padding:1rem;
+        font-family: $textFont;
+
+        &--add{
+
+            border-radius: 30px;
+            padding:1.2rem;
+            background:transparent;
+            border:1px solid rgba(0,0,0,0.6);
+            font-size: 1.6rem;
+            cursor: pointer;
+            background-color: $UIcolor;
+            color:$bgColor;
+            transition:$transition;
+
+            &:hover{
+                 background-color:$clr-green-light;
+
+            }
+          
+        }
+
+        &--modal{
+            border-radius: 30px;
+            padding:1.2rem;
+            background:transparent;
+            border:1px solid rgba(0,0,0,0.6);
+            font-size: 1.6rem;
+            color:$textColor;
+            transition:$transition;
+            cursor: pointer;
+
+            &:hover{
+                 background-color:$UIcolor;
+                 color:$bgColor;
+
+            }
+        }
+    }
+      
+}
